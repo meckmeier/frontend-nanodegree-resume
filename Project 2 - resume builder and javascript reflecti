@@ -1,5 +1,0 @@
-Project 2 - resume builder and javascript reflections
-* starting with append syntax:
-$("#main").append("Mary Eckmeier");
-This is put into a js file located in the js folder.
--note that jquery was added or referenced in the html file.
