@@ -5,19 +5,19 @@ Mary Eckmeier, 8/17/2015
 
 var bio =
 {
-  "name":"Mary Eckmeier",
-  "role":"Front End Web Developer",
+  "name":"Brett Laidlaw",
+  "role":"Woods Walker",
   "contacts":
     {
-      "mobile":"651-690-2434",
-      "email": "mary@eckmeier.com",
+      "mobile":"651.324.3850",
+      "email": "brettlaidlaw@eckmeier.com",
       "github": "https://github.com/meckmeier",
-      "twitter": "@foragerswife",
+      "twitter": "@troutcaviar",
       "location":"Ridgeland, WI"
     },
   "biopic":"images/myback_small.jpg",
-  "skills":["database design", "sql server", "technical training","small business applications", "HTML and CSS", "javascript and jQuery"],
-  "welcomeMessage":"Revitalizing rural Wisconsin thru best-in-class web designs"
+  "skills":["writer", "cooking demos", "speaking engagements", "local foods booster"],
+  "welcomeMessage":"Same as it ever was"
 };
 bio.display=function ()
 {
@@ -31,11 +31,11 @@ bio.display=function ()
       var formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
       var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
 
-      $("#topContacts").prepend(formattedLocation);
-      $("#topContacts").prepend(formattedTwitter);
-      $("#topContacts").prepend(formattedGithub);
-      $("#topContacts").prepend(formattedEmail);
-      $("#topContacts").prepend(formattedMobile);
+      $("#topContacts").append(formattedLocation);
+      $("#topContacts").append(formattedTwitter);
+      $("#topContacts").append(formattedGithub);
+      $("#topContacts").append(formattedEmail);
+      $("#topContacts").append(formattedMobile);
       $("#header").prepend(formattedrole);
       $("#header").prepend(formattedname);
       $("#header").prepend(formattedImage);
@@ -49,7 +49,6 @@ bio.display=function ()
                $("#skills").append(formattedSkills);
              }
       }
-
       $("#footerContacts").append(formattedLocation);
       $("#footerContacts").append(formattedTwitter);
       $("#footerContacts").append(formattedGithub);
@@ -60,48 +59,30 @@ bio.display=function ()
 var   work=
   {"jobs":
     [
-      {
-        "employer":"US Bank",
-        "title":"BI Guru",
+      { "employer":"Minnesota Historical Society Press",
+        "title":"Trout Caviar: Recipes from a Northern Forager",
+        "location":"St. Paul, MN",
+        "dates":"2011",
+        "description":"Author of local-focused cookbook. Presentations, readings, and general promotions."
+      },
+      { "employer":"Real Bread",
+        "title":"Baker and proprietor",
+        "location":"St. Paul, MN",
+        "dates":"2004 - 2011",
+        "description":"Owned and operated artisan bread bakery selling at local farmers market."
+      },
+     {  "employer":"Sichuan University",
+        "title":"English Professor",
+        "location":"Chengdu, Sichuan, China",
+        "dates":"1989",
+        "description":"Taught English to both university students and adult learners."
+      },
+     {  "employer":"Norton Publishing",
+        "title":"Three Nights in the Heart of the Earth/ Blue Bel Air",
         "location":"Minneapolis, MN",
-        "dates":"2011 - 2015",
-        "description":"Go to person for Wealth Management data mart -- located data; cleansed; cubed; presented and supported data"
+        "dates":"1980",
+        "description":"Two novels published early in the author's career. They are both lyric and deeply moving stories."
       },
-      {
-        "employer":"Eckmeier Consulting Services",
-        "title":"Principal",
-        "location":"St. Paul, MN",
-        "dates":"1994 - 2011",
-        "description":"Consulting services: business intelligence (Microsoft Stack): report writing, training and database development (MS Access, SQL Server)."
-      },
-      {
-        "employer":"Real Bread",
-        "title":"Assistant Baker",
-        "location":"St. Paul, MN",
-        "dates":"2002 - 2009",
-        "description":"Scones, madeleines, breton butter cakes. Did all web site maintenance and email list management."
-      },
-      {
-        "employer":"Briggs and Morgan",
-        "title":"Corporate Trainer",
-        "location":"St. Paul, MN",
-        "dates":"1987-1991",
-        "description":"Provided technical training for conversion to a novell network and personal computers from standalone memory typewrites to all employees from lawyers to legal secretaries."
-      },
-      {
-        "employer":"Grand Teton Science School",
-        "title":"Office Manager",
-        "location":"Kelly, WY",
-        "dates":"1985-1986",
-        "description":"Office manager for science school offering science education for adults and children's programs."
-      },
-      {
-        "employer":"Grand Teton Lodge Company",
-        "title":"Sales Assistant, Purchasing Secretary, Front Desk Clerk",
-        "location":"Moran, WY",
-        "dates":"1983-1985",
-        "description":"Several positions at large resort in Grand Teton National Park"
-      }
     ]
   };
 work.display=function ()

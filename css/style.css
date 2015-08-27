@@ -105,12 +105,16 @@ a {
   display: none;
 }
 
+.yellowgreen {
+  background-color: #9ACD32
+}
+
 .orange {
   background-color: #f5ae23;
 }
 
 .orange-text {
-  color: #f5ae23;
+  color: #4a4a4a;
 }
 
 .white-text {
@@ -128,9 +132,9 @@ a {
   background-color: #4a4a4a;
 }
 
-/* TODO: Replace with image later */
+/* TODO: Replace with image later --#484848   oange text old value*/
 #header {
-  background-color: #484848;
+  background-color: #6B8E23;
 }
 
 .flex-box {
